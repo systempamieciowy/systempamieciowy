@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GSP</h1>
+        <div id="display-area">
+            <div id="display-img-card" class="number-display"></div>
+            <img id="display-img" src="" alt="Obrazek">
+        </div>
+        <button id="show-button">Pokaż</button>
+        <div id="counter">Pozostało liczb: 100</div>
+        <div id="controls">
+            <div class="control-item">
+                <label for="mode-select">Tryb:</label>
+                <select id="mode-select">
+                    <option value="number-to-image">Liczba -> Obraz</option>
+                    <option value="image-to-number">Obraz -> Liczba</option>
+                </select>
+            </div>
+            <div class="control-item">
+                <label>Zakres:</label>
+                <label><input type="checkbox" id="range-900-999" value="900-999"> 900-999</label>
+                <label><input type="checkbox" id="range-800-899" value="800-899"> 800-899</label>
+                <label><input type="checkbox" id="range-700-799" value="700-799"> 700-799</label>
+                <label><input type="checkbox" id="range-600-699" value="600-699"> 600-699</label>
+                <label><input type="checkbox" id="range-500-599" value="500-599"> 500-599</label>
+                <label><input type="checkbox" id="range-400-499" value="400-499"> 400-499</label>
+                <label><input type="checkbox" id="range-300-399" value="300-399"> 300-399</label>
+                <label><input type="checkbox" id="range-200-299" value="200-299"> 200-299</label>
+                <label><input type="checkbox" id="range-100-199" value="100-199"> 100-199</label>
+                <label><input type="checkbox" id="range-000-099" value="000-099"> 000-099</label>
+                <label><input type="checkbox" id="range-00-99" value="00-99"> 00-99</label>
+                <label><input type="checkbox" id="range-0-9" value="0-9"> 0-9</label>
+                <label><input type="checkbox" id="range-cards" value="cards"> Karty</label>
+                <label><input type="checkbox" id="custom-range" value="custom-range"> Własne liczby</label>
+            </div>
+            <div class="control-item" id="custom-input-container" style="display: none;">
+                <label for="custom-input">Wpisz liczby:</label>
+                <textarea id="custom-input" rows="4" cols="50" placeholder="Wprowadź liczby oddzielone spacją lub enterem..."></textarea>
+                <button id="process-custom-input">Przetwórz liczby</button>
+            </div>
+        </div>
+    </div>
+    <script src="0-9.js"></script>
+    <script src="00-99.js"></script>
+    <script src="000-099.js"></script>
+    <script src="100-199.js"></script>
+    <script src="200-299.js"></script>
+    <script src="300-399.js"></script>
+    <script src="400-499.js"></script>
+    <script src="500-599.js"></script>
+    <script src="600-699.js"></script>
+    <script src="700-799.js"></script>
+    <script src="800-899.js"></script>
+    <script src="900-999.js"></script>
+    <script src="karty.js"></script>
+    <script src="karty_img.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
